@@ -18,11 +18,6 @@ Le frontend communique exclusivement avec les services REST exposés par le back
   - JEE / JAX-RS
   - Endpoints REST pour la gestion des personnes
   - Déployé sur Tomcat  
-  - Base URL :
-    ```
-    http://localhost:8080/mini-projet/api/users
-    ```
-
 ---
 
 ## Fonctionnalités:
