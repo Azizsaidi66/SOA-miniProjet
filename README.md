@@ -1,5 +1,5 @@
 # SOA-miniProjet
-Mohammed aziz saidi (tp8) & fedi ben hadj fraj (tp8)
+Mohammed aziz saidi (tp8) & Fedi ben hadj fraj (tp8)
 
 # Person Management System – Frontend REST Client
 
@@ -63,7 +63,7 @@ Le frontend communique exclusivement avec les services REST exposés par le back
 
 - HTML5
 - CSS3
-- JavaScript (ES6)
+- JavaScript 
 - Backend REST JEE / JAX-RS
 - Apache Tomcat
 
