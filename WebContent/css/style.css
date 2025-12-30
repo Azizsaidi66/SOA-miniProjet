@@ -7,25 +7,24 @@
 :root {
   --primary: #0f766e;
   --primary-light: #14b8a6;
-  --danger: #ef4444;
-  --danger-dark: #dc2626;
+  --del: #ef4444;
+  --deld: #dc2626;
   --success: #10b981;
   --background: #f8fafc;
-  --surface: #ffffff;
+  --background2: #ffffff;
   --border: #e2e8f0;
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --text: #1e293b;
+  --text2: #64748b;
+  --shadow: 0 1px 3px rgba(38, 26, 26, 0.1);
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(135deg, var(--background) 0%, #ecf0f5 100%);
-  color: var(--text-primary);
+  color: var(--text);
   min-height: 100vh;
   padding: 20px;
-  line-height: 1.6;
+  line-height: 1;
 }
 
 .container {
@@ -40,7 +39,7 @@ header {
   border-radius: 12px;
   margin-bottom: 40px;
   text-align: center;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow);
 }
 
 header h1 {
@@ -62,7 +61,7 @@ header p {
 }
 
 .section {
-  background: var(--surface);
+  background: var(--background2);
   padding: 28px;
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -71,7 +70,7 @@ header p {
 }
 
 .section:hover {
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow);
   transform: translateY(-2px);
 }
 
@@ -100,8 +99,8 @@ input[type="number"] {
   border-radius: 8px;
   font-size: 0.95rem;
   transition: all 0.2s ease;
-  background: var(--surface);
-  color: var(--text-primary);
+  background: var(--background2);
+  color: var(--text);
 }
 
 input[type="text"]:focus,
@@ -113,7 +112,7 @@ input[type="number"]:focus {
 
 input[type="number"]:disabled {
   background: var(--background);
-  color: var(--text-secondary);
+  color: var(--text2);
   cursor: not-allowed;
   border-color: var(--border);
 }
@@ -172,27 +171,27 @@ input[type="number"]:disabled {
 }
 
 .btn.delete {
-  background: var(--danger);
+  background: var(--del);
   color: white;
 }
 
 .btn.delete:hover {
-  background: var(--danger-dark);
+  background: var(--deld);
 }
 
 .btn-danger {
-  background: var(--danger);
+  background: var(--del);
   color: white;
   flex: 1;
 }
 
 .btn-danger:hover {
-  background: var(--danger-dark);
+  background: var(--deld);
 }
 
 .btn-cancel {
   background: #e5e7eb;
-  color: var(--text-primary);
+  color: var(--text);
   flex: 1;
 }
 
@@ -201,7 +200,7 @@ input[type="number"]:disabled {
 }
 
 .table-wrapper {
-  background: var(--surface);
+  background: var(--background2);
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -231,7 +230,7 @@ th {
 td {
   padding: 12px 16px;
   border-bottom: 1px solid var(--border);
-  color: var(--text-primary);
+  color: var(--text);
 }
 
 tbody tr {
@@ -248,7 +247,7 @@ tbody tr:last-child td {
 
 .no-result {
   text-align: center;
-  color: var(--text-secondary);
+  color: var(--text2);
   padding: 40px 20px;
 }
 
@@ -270,7 +269,7 @@ tbody tr:last-child td {
 }
 
 .modal {
-  background: var(--surface);
+  background: var(--background2);
   border-radius: 12px;
   padding: 32px;
   max-width: 400px;
@@ -280,13 +279,13 @@ tbody tr:last-child td {
 
 .modal h3 {
   font-size: 1.25rem;
-  color: var(--danger);
+  color: var(--del);
   margin-bottom: 12px;
   font-weight: 700;
 }
 
 .modal p {
-  color: var(--text-secondary);
+  color: var(--text2);
   margin-bottom: 24px;
   font-size: 0.95rem;
 }

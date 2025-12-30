@@ -38,7 +38,7 @@ function addPerson() {
   const age = document.getElementById("addAge").value
 
   if (!name || !age) {
-    alert("Please fill in all fields")
+    alert("invalid name or age !")
     return
   }
 
@@ -64,7 +64,7 @@ function updatePerson() {
   const age = document.getElementById("updateAge").value
 
   if (!id || !name || !age) {
-    alert("Please fill in all fields")
+    alert("invalid infos !")
     return
   }
 
