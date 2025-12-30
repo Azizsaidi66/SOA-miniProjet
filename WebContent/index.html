@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MINI-PROJET</h1>
+            <p>Mohammed aziz saidi (TP8) & Fedi ben hadj fraj (TP8)</p>
+        </header>
+
+        <div class="main-content">
+            <section class="section">
+                <h2>Add New Person</h2>
+                <div class="form-group">
+                    <input type="text" id="addName" placeholder="name">
+                    <input type="number" id="addAge" placeholder="age">
+                    <button class="btn btn-primary" onclick="addPerson()">Add Person</button>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Update Person</h2>
+                <div class="form-group">
+                    <input type="number" id="updateId" placeholder="id">
+                    <input type="text" id="updateName" placeholder="new name">
+                    <input type="number" id="updateAge" placeholder="age">
+                    <button class="btn btn-primary" onclick="updatePerson()">Update Person</button>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Search Person</h2>
+                <div class="form-group">
+                    <input type="text" id="searchValue" placeholder="Search">
+                    <button class="btn btn-success" onclick="searchPerson()">Search</button>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="searchTable"></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <section class="section table-section">
+            <h2>All Persons</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="personTable"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal-overlay" id="confirmOverlay">
+        <div class="modal">
+            <h3>Confirm Deletion</h3>
+            <p>Are you sure ?</p>
+            <div class="modal-buttons">
+                <button class="btn btn-danger" id="confirmYes">Delete</button>
+                <button class="btn btn-cancel" id="confirmNo">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
